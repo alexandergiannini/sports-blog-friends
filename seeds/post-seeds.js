@@ -1,7 +1,8 @@
 // Seeded Posts go here
 // needs user_id, post_title, post_content;
+
 const { Post } = require('../models');
-const postdata = [
+const postData = [
   {
     post_title: 'Will the Lakers make a move at the trade deadline?',
     post_content: `General manager and vice president of basketball operations Rob Pelinka will attempt to give the team some help ahead of Thursday's trade deadline, but the Lakers have limited assets and are facing significant financial constraints
@@ -13,5 +14,6 @@ So, what about players? Los Angeles could make Kentavious Caldwell-Pope, Montrez
   }
 ]
 
-User.bulkCreate(postData);
+const seedPosts = () => Post.bulkCreate(postData);
+
 module.exports = seedPosts;
