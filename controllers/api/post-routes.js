@@ -29,7 +29,7 @@ router.post('/', (req, res) => {
         // id: req.body.id,
         post_title: req.body.post_title,
         post_content: req.body.post_content,  //req.body.body,
-        // user_id: req.session.user_id, ///req.body.user_id
+        user_id: req.body.user_id ///req.body.user_id
         //   user: req.session.username
     }).then(result => {
         res.json(result);
