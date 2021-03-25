@@ -1,10 +1,10 @@
-/ Seeded Users go Here
+// Seeded Users go Here
 // needs Id, username, password
 const { User } = require('../models');
 const userData = [
   {
     username: 'Tae',
-    user_pass: '1234'
+    password: '1234'
   },
   {
     username: 'Davit',
