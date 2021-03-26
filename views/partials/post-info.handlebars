@@ -15,8 +15,8 @@
             {{post_content}}
         </div>
             <div class="is-pulled-right user-content">
-                <b>{{user.username}}</b> | 
-                 | {{format_date created_at}} | <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+                <b>{{user.username}}</b> | <!--format_date-format_plural---> 
+                 | {{format_date created_at}} | <a href="/post/{{id}}">{{format_plural comments.length}} {{ "comment" comments.length}}</a>
             </div>
     </div>
     
