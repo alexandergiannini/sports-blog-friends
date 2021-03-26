@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
     Post.findAll({
         attributes: [
             'id',
-            'post_title',
+            'title',
             'created_at',
             'post_content'
         ],
@@ -44,7 +44,7 @@ router.get('/', (req, res) => {
       },
       attributes: [
         'id',
-        'post_title',
+        'title',
         'created_at',
         'post_content'
       ],
@@ -79,7 +79,7 @@ router.get('/', (req, res) => {
 
 router.post('/', withAuth, (req, res) => {
     Post.create({
-      post_title: req.body.post_title,
+      title: req.body.title,
       post_content: req.body.post_content,
       user_id: req.session.user_id
     })
@@ -92,7 +92,7 @@ router.post('/', withAuth, (req, res) => {
 
 router.put('/:id', withAuth, (req, res) => {
     Post.update({
-        post_title: req.body.post_title,
+        title: req.body.title,
         post_content: req.body.post_content
       },
       {

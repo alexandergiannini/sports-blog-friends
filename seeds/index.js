@@ -4,22 +4,19 @@ const seedComments = require('./comment-seeds');
 
 const sequelize = require('../config/connection');
 
-const allSeeds = async() => {
-    await sequelize.sync({ force: false });
-    console.log('\n');
+const seedAll = async () => {
+  await sequelize.sync({ force: true });
+  console.log('--------------');
+  await seedUsers();
+  console.log('--------------');
 
-    await seedUsers();
-    console.log('\n');
+  await seedPosts();
+  console.log('--------------');
 
-    await seedPosts();
-    console.log('\n');
+  await seedComments();
+  console.log('--------------');
 
-    await seedComments();
-    console.log('\n');
+  process.exit(0);
+};
 
-    process.exit(0);
-
-
-}
-
-allSeeds();
+seedAll();

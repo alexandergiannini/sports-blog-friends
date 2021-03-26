@@ -8,9 +8,7 @@
   "description": "# on Env file, create ur own credentials!",
   "version": "1.0.0",
   "main": "server.js",
-  "directories": {
-    
-  },
+  "directories": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexandergiannini/sports-blog-friends.git"

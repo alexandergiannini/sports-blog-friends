@@ -11,7 +11,7 @@ router.get('/', withAuth, (req, res) => {
       },
       attributes: [
         'id',
-        'post_title',
+        'title',
         'created_at',
         'post_content'
       ],
@@ -48,7 +48,7 @@ router.get('/', withAuth, (req, res) => {
       },
       attributes: [
         'id',
-        'post_title',
+        'title',
         'created_at',
         'post_content'
       ],
@@ -95,7 +95,7 @@ router.get('/create/', withAuth, (req, res) => {
       },
       attributes: [
         'id',
-        'post_title',
+        'title',
         'created_at',
         'post_content'
       ],
