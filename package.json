@@ -1,14 +1,15 @@
 {
   "scripts": {
     "start": "node server.js",
-    "seed": "node seeds/index.js"
+    "seed": "node seeds/index.js",
+    "test": "jest"
   },
   "name": "sports-blog-friends",
   "description": "# on Env file, create ur own credentials!",
   "version": "1.0.0",
   "main": "server.js",
   "directories": {
-    "test": "jest"
+    
   },
   "repository": {
     "type": "git",
