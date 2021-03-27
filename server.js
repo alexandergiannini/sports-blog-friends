@@ -6,7 +6,9 @@ const sequelize = require("./config/connection");
 const helpers = require('./utils/helpers');
 //stripe payment info
 require('dotenv').config();
-const stripe = require('stripe')(process.env.Secret_Key);
+//put SECRET_KEY and PUBLISHABLE_KEY into ENV File once working
+const SECRET_KEY = "sk_test_51GEfgRJIoFEQrpd2DpleuMctJKKaQj0PWk39Zfa5g9GtjbPGBK7yhCvuTXkf2GFnBhGwDLbMRoS2xb7KyMhP76zw00C1tAbUCW"
+const stripe = require('stripe')(SECRET_KEY);
 
 const app = express();
 const PORT = process.env.PORT || 3001;
