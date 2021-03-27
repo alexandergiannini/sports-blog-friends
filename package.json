@@ -1,15 +1,14 @@
 {
   "scripts": {
     "start": "node server.js",
-    "seed": "node seeds/index.js"
+    "seed": "node seeds/index.js",
+    "test": "jest"
   },
   "name": "sports-blog-friends",
   "description": "# on Env file, create ur own credentials!",
   "version": "1.0.0",
   "main": "server.js",
-  "directories": {
-    "test": "jest"
-  },
+  "directories": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexandergiannini/sports-blog-friends.git"
@@ -29,7 +28,8 @@
     "express-handlebars": "^5.2.1",
     "express-session": "^1.17.1",
     "mysql2": "^2.2.5",
-    "sequelize": "^6.6.2"
+    "sequelize": "^6.6.2",
+    "stripe": "^8.140.0"
   },
   "devDependencies": {
     "jest": "^26.6.3"

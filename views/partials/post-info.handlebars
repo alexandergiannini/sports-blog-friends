@@ -1,9 +1,8 @@
-
 <div class="card mb-6">
   <header class="card-header card-header-title">
         <div class="column">
             <p class=" has-text-primary-light"></p>
-      <a href="/post/{{id}}"  class="has-text-white is-capitalized is-pulled-left">{{title}} </a></p>
+      <a href="/post/{{id}}"  class="has-text-white is-capitalized is-pulled-left">{{post_title}} </a></p>
       </div>
       <div class="column">
       <span class=""> </span>
@@ -19,4 +18,3 @@
                  | {{format_date created_at}} | <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
             </div>
     </div>
-    
