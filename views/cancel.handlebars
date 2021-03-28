@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>Checkout canceled</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="wrapper">
+    <header>
+        <a href="/"><h1 class="heading mt-3 mb-3">The BasketBlog</h1></a>
+        <nav>
+            {{#if loggedIn}}
+            <a href="/" class="home-title">Home</a>
+            <a href="/dashboard" class="home-title">Dashboard</a>
+            <button id="logout" class="button logout-btn">Logout</button>
+            {{else}}
+            <a href="/" class="home-title">Home</a>
+            <a href="/login" class="button login-btn">Login</a>
+            {{/if}}
+        </nav>
+    </header>
+  <section>
+    <p>Looks like you weren't able to join sports blog friends? If you are having trouble please click the button below or go back to the homepage</p>
+    <button><a href="/premium-payment">Return to Payment</a></button>
+  </section>
+</body>
+</html>
