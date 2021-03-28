@@ -42,39 +42,6 @@ app.get('/premium-payment', function(req, res){
     }) 
   }) 
 
-
-// app.post('/premium-payment', (req,res) => {
-//   //this is sending the stripe info
-//   stripe.customers
-//   .create({
-//     email: 'customer@example.com',
-//   })
-//   .then((customer) => {
-//     // have access to the customer object
-//     return stripe.invoiceItems
-//       .create({
-//         customer: customer.id, // set the customer id
-//         amount: 100, // $1
-//         currency: 'usd',
-//         description: 'One-time setup fee',
-//       })
-//       .then((invoiceItem) => {
-//         return stripe.invoices.create({
-//           collection_method: 'send_invoice',
-//           customer: invoiceItem.customer,
-//         });
-//       })
-//       .then((invoice) => {
-//         console.log(`invoice is ${invoice}`)
-//         // New invoice created on a new customer
-//       })
-//       .catch((err) => {
-//         // Deal with an error
-//       });
-//   });
-
-// })
-
 //Add heroku domain when ready
 const YOUR_DOMAIN = 'http://localhost:3001';
 
@@ -86,10 +53,10 @@ app.post('/create-checkout-session', async (req, res) => {
         price_data: {
           currency: 'usd',
           product_data: {
-            name: 'Join the Sports Blog Team',
+            name: 'Donate on this post and support the Sports Blog Team',
             images: ['https://i.imgur.com/EHyR2nP.png'],
           },
-          unit_amount: 1000, //$10
+          unit_amount: 500, //$10
         },
         quantity: 1,
       },
