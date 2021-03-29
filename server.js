@@ -10,6 +10,9 @@ require('dotenv').config();
 const SECRET_KEY = "sk_test_51GEfgRJIoFEQrpd2DpleuMctJKKaQj0PWk39Zfa5g9GtjbPGBK7yhCvuTXkf2GFnBhGwDLbMRoS2xb7KyMhP76zw00C1tAbUCW"
 const stripe = require('stripe')(SECRET_KEY);
 
+// require bodyParser
+//var bodyParser = require('body-parser');
+
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -39,38 +42,35 @@ app.get('/premium-payment', function(req, res){
     }) 
   }) 
 
+//Add heroku domain when ready
+const YOUR_DOMAIN = 'http://localhost:3001';
 
-app.post('/premium-payment', (req,res) => {
-  //this is sending the stripe info
-  stripe.customers
-  .create({
-    email: 'customer@example.com',
-  })
-  .then((customer) => {
-    // have access to the customer object
-    return stripe.invoiceItems
-      .create({
-        customer: customer.id, // set the customer id
-        amount: 100, // $1
-        currency: 'usd',
-        description: 'One-time setup fee',
-      })
-      .then((invoiceItem) => {
-        return stripe.invoices.create({
-          collection_method: 'send_invoice',
-          customer: invoiceItem.customer,
-        });
-      })
-      .then((invoice) => {
-        console.log(`invoice is ${invoice}`)
-        // New invoice created on a new customer
-      })
-      .catch((err) => {
-        // Deal with an error
-      });
+app.post('/create-checkout-session', async (req, res) => {
+  const session = await stripe.checkout.sessions.create({
+    payment_method_types: ['card'],
+    line_items: [
+      {
+        price_data: {
+          currency: 'usd',
+          product_data: {
+            name: 'Donate on this post and support the Sports Blog Team',
+            images: ['https://i.imgur.com/EHyR2nP.png'],
+          },
+          unit_amount: 500, //$10
+        },
+        quantity: 1,
+      },
+    ],
+    mode: 'payment',
+    // Add Heroku Domain Page when ready
+    success_url: `${YOUR_DOMAIN}/dashboard/success`,
+    cancel_url: `${YOUR_DOMAIN}/cancel`,
   });
+  res.json({ id: session.id });
+});
 
-})
+
+
 
 const hbs = exphbs.create({ helpers });
 

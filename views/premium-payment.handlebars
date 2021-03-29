@@ -1,8 +1,23 @@
 
+<!--
 <!DOCTYPE html> 
 <html> 
 <title>Stripe Payment Demo</title> 
 <body> 
+	  <div class="wrapper">
+    <header>
+        <a href="/"><h1 class="heading mt-3 mb-3">The BasketBlog</h1></a>
+        <nav>
+            {{#if loggedIn}}
+            <a href="/" class="home-title">Home</a>
+            <a href="/dashboard" class="home-title">Dashboard</a>
+            <button id="logout" class="button logout-btn">Logout</button>
+            {{else}}
+            <a href="/" class="home-title">Home</a>
+            <a href="/login" class="button login-btn">Login</a>
+            {{/if}}
+        </nav>
+    </header>
 	<h3>Welcome to Payment Gateway</h3> 
 	<form action="payment" method="POST"> 
 	<script
@@ -18,3 +33,47 @@
 	</form> 
 </body> 
 </html> 
+
+-->
+
+<html>
+  <head>
+    <title>Buy cool new product</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+  </head>
+  <body>
+	      <header>
+        <a href="/"><h1 class="heading mt-3 mb-3">The BasketBlog</h1></a>
+        <nav>
+            {{#if loggedIn}}
+            <a href="/" class="home-title">Home</a>
+            <a href="/dashboard" class="home-title">Dashboard</a>
+            <button id="logout" class="button logout-btn">Logout</button>
+            {{else}}
+            <a href="/" class="home-title">Home</a>
+            <a href="/login" class="button login-btn">Login</a>
+            {{/if}}
+        </nav>
+    </header>
+    <section>
+      <div class="product">
+        <img
+          src="https://i.imgur.com/EHyR2nP.png"
+          alt="Join the Sports Blog Friends"
+        />
+        <div class="description">
+          <h3>Join Sports Blog Friends</h3>
+          <h5>$10.00</h5>
+        </div>
+      </div>
+      <button type="button" id="checkout-button">Checkout</button>
+    </section>
+  </body>
+  <script src="/javascript/payment.js">
+    // Create an instance of the Stripe object with your publishable API key
+    
+  </script>
+
+  </html>

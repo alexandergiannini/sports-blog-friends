@@ -125,5 +125,10 @@ router.get('/create/', withAuth, (req, res) => {
       });
   });
 
+router.get('/success', (req, res) => {
+  res.render('success')
+
+});
+
 
 module.exports = router;
