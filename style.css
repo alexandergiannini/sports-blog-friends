@@ -1,0 +1,15 @@
+a, .btns {
+  margin: 15px;
+}
+
+h1 {
+  text-shadow: 2px 2px 2px #1C6EA4;
+}
+
+.meta {
+  color: green;
+}
+
+.text {
+  color: blue;
+}

@@ -6,27 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The BasketBlog</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <link rel="stylesheet" href="../../style.css">
   <!--<link rel="stylesheet" href="/stylesheets/style.css"-->
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 
   <div class="wrapper">
     <header>
-        <a href="/"><h1 class="heading mt-3 mb-3">The BasketBlog</h1></a>
+        <a href="/"><h1 class="heading mt-3 mb-3 is-size-5 has-text-centered">The BasketBlog</h1></a>
         <nav>
             {{#if loggedIn}}
             <a href="/" class="home-title">Home</a>
             <a href="/dashboard" class="home-title">Dashboard</a>
+            <div class="btns has-text-right"></div>
             <button id="logout" class="button logout-btn">Logout</button>
+            </div>
             {{else}}
             <a href="/" class="home-title">Home</a>
+            <div class="btns has-text-right">
             <a href="/login" class="button login-btn">Login</a>
+            </div>
             {{/if}}
         </nav>
     </header>
     
 
-    <main>
+    <main class="has-text-centered">
             {{{ body }}}
     </main>
 
