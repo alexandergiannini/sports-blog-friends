@@ -1,19 +1,23 @@
-<div class="column">
+<div class="column has-text-centered">
 <h2 class="title pb-4">Login</h2>
-<form class="login-form">
-  <div>
-    <label for="username-login"></label>
+<form class="login-form box">
+  <div class="field">
+    <label for="username-login" class="label">Username</label>
+    <div class="control">
     <input type="text" id="username-login" placeholder="Enter your username" size="50" />
+    </div>
   </div>
-  <div>
-    <label for="password-login"></label>
+  <div class="field">
+    <label for="password-login" class="label">Password</label>
+    <div class="control">
     <input type="password" id="password-login" placeholder="Enter your password" size="50" />
+    </div>
   </div>
   <div>
     <div class="btn">
-    <button type="submit" class="login-btn button">Login</button>
+    <button type="submit" class="login-btn button is-primary">Login</button>
     <div>
-    <a href="/signup"><button type="button" class="sign-btn button">Signup</button></a>
+    <a href="/signup"><button type="button" class="sign-btn button is-primary">Signup</button></a>
     </div>
     </div>
   </div>

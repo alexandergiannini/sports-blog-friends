@@ -43,7 +43,7 @@ app.get('/premium-payment', function(req, res){
   }) 
 
 //Add heroku domain when ready
-const YOUR_DOMAIN = 'http://localhost:3001';
+const YOUR_DOMAIN = 'https://guarded-ravine-67476.herokuapp.com';
 
 app.post('/create-checkout-session', async (req, res) => {
   const session = await stripe.checkout.sessions.create({
@@ -53,8 +53,8 @@ app.post('/create-checkout-session', async (req, res) => {
         price_data: {
           currency: 'usd',
           product_data: {
-            name: 'Donate on this post and support the Sports Blog Team',
-            images: ['https://i.imgur.com/EHyR2nP.png'],
+            name: 'Giving a High $5 on a post is supporting independent basketball journalists and helping our Basketblog community grow.',
+            images: ['https://images.unsplash.com/photo-1519861531473-9200262188bf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80'],
           },
           unit_amount: 500, //$10
         },
@@ -68,6 +68,8 @@ app.post('/create-checkout-session', async (req, res) => {
   });
   res.json({ id: session.id });
 });
+
+
 
 
 
