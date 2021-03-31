@@ -69,6 +69,24 @@ app.post('/create-checkout-session', async (req, res) => {
   res.json({ id: session.id });
 });
 
+//nba api
+var unirest = require("unirest");
+
+var req = unirest("GET", "https://api-nba-v1.p.rapidapi.com/games/live/");
+
+req.headers({
+	"x-rapidapi-key": "1ed9c886abmsh32eb4c7f0a85c77p1e0c4ejsn2d34405cd38a",
+	"x-rapidapi-host": "api-nba-v1.p.rapidapi.com",
+	"useQueryString": true
+});
+
+
+req.end(function (res) {
+	if (res.error) throw new Error(res.error);
+
+	console.log(res.body);
+});
+
 
 
 

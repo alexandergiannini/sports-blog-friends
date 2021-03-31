@@ -14,17 +14,28 @@
   <div class="wrapper">
     <header>
         <a href="/"><h1 class="heading mt-3 mb-3 is-size-5 has-text-centered">The BasketBlog</h1></a>
-        <nav>
+        <nav class="navbar">
             {{#if loggedIn}}
-            <a href="/" class="home-title">Home</a>
-            <a href="/dashboard" class="home-title">Dashboard</a>
-            <div class="btns has-text-right"></div>
-            <button id="logout" class="button logout-btn">Logout</button>
+            <a href="/" class="home-title navbar-item">Home</a>
+            <a href="/dashboard" class="home-title navbar-item">Dashboard</a>
+            <!--places logout on the same line at the end -->
+              <div class="navbar-end">
+                <div class="navbar-item">
+              <div class="btns has-text-right"></div>
+                <button id="logout" class="button logout-btn">Logout</button>
+                  </div>
+              </div>
             </div>
             {{else}}
-            <a href="/" class="home-title">Home</a>
-            <div class="btns has-text-right">
-            <a href="/login" class="button login-btn">Login</a>
+            <div class="navbar-item">
+              <a href="/" class="home-title">Home</a>
+            </div>
+            <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="btns has-text-right">
+              <a href="/login" class="button login-btn">Login</a>
+              </div>
+            </div>
             </div>
             {{/if}}
         </nav>
@@ -39,6 +50,9 @@
       <div class="row-is-full content has-text-centered">
       <h4> </h4>
       
+  </div>
+  <div class="nba games">
+    <div class=""
   </div>
     </footer>
 

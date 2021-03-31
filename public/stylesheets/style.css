@@ -1,5 +1,5 @@
 body {
-  background-image: url("https://image.freepik.com/free-vector/basketball-ball_22415-1451.jpg")
+  background-image: url("https://i.imgur.com/qTfBLEC.gif")
 }
 
 a, .btns {
@@ -16,4 +16,32 @@ h1 {
 
 .text {
   color: blue;
+}
+
+body {
+  margin: 1rem, 2rem, 2rem, 1rem;
+}
+
+.card {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+nav {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.login-btn{
+  margin-bottom: 1.5rem;
+}
+
+.card-success{
+  width: 750px;
+  
+}
+
+.success-items{
+  align-items: center;
+  justify-self: center;
 }
