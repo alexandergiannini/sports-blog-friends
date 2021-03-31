@@ -53,8 +53,8 @@ app.post('/create-checkout-session', async (req, res) => {
         price_data: {
           currency: 'usd',
           product_data: {
-            name: 'Donate on this post and support the Sports Blog Team',
-            images: ['https://i.imgur.com/EHyR2nP.png'],
+            name: 'Giving a High $5 on a post is supporting independent basketball journalists and helping our Basketblog community grow.',
+            images: ['https://images.unsplash.com/photo-1519861531473-9200262188bf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80'],
           },
           unit_amount: 500, //$10
         },
@@ -69,23 +69,7 @@ app.post('/create-checkout-session', async (req, res) => {
   res.json({ id: session.id });
 });
 
-//nba api
-var unirest = require("unirest");
 
-var req = unirest("GET", "https://api-nba-v1.p.rapidapi.com/games/live/");
-
-req.headers({
-	"x-rapidapi-key": "1ed9c886abmsh32eb4c7f0a85c77p1e0c4ejsn2d34405cd38a",
-	"x-rapidapi-host": "api-nba-v1.p.rapidapi.com",
-	"useQueryString": true
-});
-
-
-req.end(function (res) {
-	if (res.error) throw new Error(res.error);
-
-	console.log(res.body);
-});
 
 
 
