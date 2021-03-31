@@ -43,7 +43,7 @@ app.get('/premium-payment', function(req, res){
   }) 
 
 //Add heroku domain when ready
-const YOUR_DOMAIN = 'https://guarded-ravine-67476.herokuapp.com/';
+const YOUR_DOMAIN = 'https://guarded-ravine-67476.herokuapp.com';
 
 app.post('/create-checkout-session', async (req, res) => {
   const session = await stripe.checkout.sessions.create({
