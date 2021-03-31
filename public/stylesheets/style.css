@@ -1,19 +1,196 @@
-body {
-  background-image: url("https://image.freepik.com/free-vector/basketball-ball_22415-1451.jpg")
-}
-
-a, .btns {
-  margin: 15px;
-}
-
 h1 {
-  text-shadow: 2px 2px 2px #1C6EA4;
+  text-shadow: 2px 2px skyblue;
+  background-color: orange;
+  border: 3px dotted black
 }
 
-.meta {
-  color: green;
+.description h4 {
+  color:steelblue
 }
 
-.text {
-  color: blue;
+button {
+  border: 0;
+  padding: 1%;
+  font-weight: bold;
+  transition: background-color .1s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+textarea, input {
+  padding: 10px 50px;
+  border-radius: 10px;
+  border: 1px solid black; 
+}
+
+textarea {
+  min-width: 40%;
+  min-height: 100px;
+}
+
+form > div {
+  margin-bottom: 2%;
+}
+
+form label {
+  display: block;
+}
+/* <--------------------------------- main ---------------------------------> */
+.heading {
+  font-size: 20px;
+  box-shadow: 4px 4px black;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;   
+}
+
+nav {
+    justify-content: space-between;
+}
+
+main {
+  flex: 1;
+  padding: 2% 4%;
+}
+
+.delete-post-btn,
+.logout-btn {
+  background-color: #ff0000;
+  border-radius: 15px;
+  border: none;
+}
+
+.delete-post-btn:hover,
+.logout-btn:hover {
+  background-color: #f5603b;
+}
+
+/* <--------------------------------- signup & login ---------------------------------> */
+.login-form,
+.signup-form {
+  text-align: center;
+}
+/* <--------------------------------- signup ---------------------------------> */
+.btn {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.sign-btn {
+   margin-left: 10rem;
+   border-radius: 15px;
+}
+
+.sign-btn:hover {
+  background-color: yellow;
+  border: none;
+}
+
+.signup-btn {
+  background-color: orange;
+  border-radius: 15px;
+}
+
+.signup-btn:hover {
+  background-color: yellow;
+  border: none;
+}
+/* <--------------------------------- login ---------------------------------> */
+.login-btn {
+  background-color: orange;
+  border-radius: 15px;
+  border: none;
+}
+
+.login-btn:hover {
+  background-color: teal;
+}
+
+.btn-comment {
+   border-radius: 15px;
+   background-color: orange;
+   margin-top: 15px;
+}
+
+.btn-comment:hover {
+   background-color: yellow;
+}
+/* <--------------------------------- dashboard ---------------------------------> */
+.dash-post {
+   font-weight: bold;
+   font-size: 20px;
+   text-align: center;
+   margin-top: 10px;
+}
+
+h2 .title {
+  background-color: orange;
+  color: teal;
+}
+
+.edit-link {
+  display: block;
+  margin: -1.5% 0 2% 0;
+}
+/* <--------------------------------- singleform ---------------------------------> */  
+.comment-form {
+  margin-bottom: 5%;
+}
+/* <--------------------------------- comments ---------------------------------> */  
+.comment {
+  padding: 1%;
+}
+
+.comments {
+  margin-top: 1%;
+}
+
+.comment:nth-child(odd) {
+  background-color: lightgrey;
+  color: orange;
+}
+
+.comment:nth-child(even) {
+  background-color: silver;
+  color: gold;
+}
+
+.comment .meta {
+  font-size: 90%;
+  margin-bottom: .5%;
+  opacity: .6;
+}
+
+.edit-post-form {
+  margin-bottom: 5%;
+}
+
+#password-login,
+#username-login,
+#username-signup,
+#password-signup {
+    text-align: center;
+}
+
+footer {
+  border-top: 3px solid black;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  font-size: 110%;
+}
+
+.card {
+    margin-top: 5em;
 }

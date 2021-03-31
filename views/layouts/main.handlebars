@@ -19,19 +19,19 @@
             <a href="/" class="home-title">Home</a>
             <a href="/dashboard" class="home-title">Dashboard</a>
             <div class="btns has-text-right"></div>
-            <button id="logout" class="button logout-btn">Logout</button>
+            <button id="logout" class="button logout-btn is-primary">Logout</button>
             </div>
             {{else}}
             <a href="/" class="home-title">Home</a>
             <div class="btns has-text-right">
-            <a href="/login" class="button login-btn">Login</a>
+            <a href="/login" class="button login-btn is-primary">Login</a>
             </div>
             {{/if}}
         </nav>
     </header>
     
 
-    <main class="has-text-centered">
+    <main class="has-text-centered"> <!-- **<main>** basically with no class ---> 
             {{{ body }}}
     </main>
 

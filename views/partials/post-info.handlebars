@@ -1,8 +1,7 @@
 <div class="card mb-6">
     <header class="card-header card-header-title">
         <div class="column">
-            <p class=" has-text-primary-light"></p>
-            <a href="/post/{{id}}" class="has-text-white is-capitalized is-pulled-left">{{post_title}} </a></p>
+            <a href="/post/{{id}}" class="is-capitalized has-text-centered">{{post_title}} </a></p>
         </div>
         <div class="column">
             <span class=""> </span>
@@ -10,8 +9,10 @@
     </header>
 
     <div class="card-content">
-        <div class="content has-text-justified">
-            {{post_title}} </br>
+        <div class="content-title has-text-justified"> <!-- **lines 12-14 not on my dummy** --->
+            {{title}}
+        </div>
+        <div class="content-post has-text-justified">
             {{post_content}}
         </div>
         <div class="is-pulled-right user-content">
@@ -29,7 +30,7 @@
                     <h5>$5.00</h5>
                 </div>
             </div>
-            <div class="buttons">
+            <div class="buttons"> <!-- **<div class="buttons is-offset-one-quarter is-half"** --->
             <button class="button is-primary" id="checkout-button">Donate</button>
             </div><!-- closes button class -->
         </section>
