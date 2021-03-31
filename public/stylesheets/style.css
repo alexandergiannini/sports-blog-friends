@@ -1,6 +1,8 @@
 body {
-  background-image: url("https://i.imgur.com/qTfBLEC.gif")
+  background-image: url("https://i.imgur.com/qTfBLEC.gif");
+  margin: 1rem, 2rem, 2rem, 1rem;
 }
+
 
 a, .btns {
   margin: 15px;
@@ -11,16 +13,9 @@ h1 {
 }
 
 .meta {
-  color: green;
+  color: primary;
 }
 
-.text {
-  color: blue;
-}
-
-body {
-  margin: 1rem, 2rem, 2rem, 1rem;
-}
 
 .card {
   margin-left: 4rem;
@@ -44,4 +39,33 @@ nav {
 .success-items{
   align-items: center;
   justify-self: center;
+}
+
+.edit-post-form{
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.new-post-form{
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+
+#back-to-dashboard{
+  margin-right: 4rem;
+}
+
+.label{
+  font-weight: bold;
+  background-color: white;
+}
+
+.comment{
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.is-half.is-centered{
+  margin-left: 20rem;
 }
