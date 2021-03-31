@@ -16,8 +16,8 @@
         <a href="/"><h1 class="heading mt-3 mb-3 is-size-4 has-text-centered">The BasketBlog</h1></a>
         <nav class="navbar">
             {{#if loggedIn}}
-            <a href="/" class="home-title navbar-item">Home</a>
-            <a href="/dashboard" class="home-title navbar-item">Dashboard</a>
+            <a href="/" class="home-title navbar-item is-primary">Home</a>
+            <a href="/dashboard" class="home-title navbar-item is-primary">Dashboard</a>
             <!--places logout on the same line at the end -->
               <div class="navbar-end">
                 <div class="navbar-item">
@@ -46,14 +46,18 @@
             {{{ body }}}
     </main>
 
-    <footer class="footer rows pb-2">
-      <div class="row-is-full content has-text-centered">
-      <h4> </h4>
+    <footer class="footer">
+      <div class=" content has-text-centered">
+      <h4> Made by:</h4>
+      <div class="columns">
+        <div class="column" ><a href="https://github.com/davitshirkhanyan" target="_blank"><i class="fab fa-github"></i> Davit Shirkhanyan </a></div>
+        <div class="column" ><a href="https://github.com/alexandergiannini" target="_blank"><i class="fab fa-github"></i> Alexander Giannini</a></div>
+        <div class="column" ><a href="https://github.com/mmcginley81" target="_blank"><i class="fab fa-github"></i> Matt McGinley</a></div>
+        <div class="column" ><a href="https://github.com/taeyjeong" target="_blank"><i class="fab fa-github"></i> Tae Jeong</a></div>
+      </div>
+      <!-- insert Github links -->
       
-  </div>
-  <div class="nba games">
-    <div class=""
-  </div>
+
     </footer>
 
 {{#if loggedIn}}

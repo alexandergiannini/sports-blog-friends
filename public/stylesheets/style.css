@@ -1,6 +1,9 @@
 body {
-  background-image: url("https://i.imgur.com/qTfBLEC.gif");
+  background-image: url("https://images.unsplash.com/photo-1586487943739-b6f6fbb142b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2125&q=80");
+  background-position: center;
+  background-size: cover;
   margin: 1rem, 2rem, 2rem, 1rem;
+  min-height: 1000px;
 }
 
 
@@ -69,3 +72,50 @@ nav {
 .is-half.is-centered{
   margin-left: 20rem;
 }
+
+.post-title{
+  font-size: 1.5rem;
+}
+
+textarea{
+  min-width: 40%;
+  min-height: 200px;
+  padding: 10px;
+}
+
+input{
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.navbar{
+  background-color: lightgrey;
+  opacity: 65%;
+}
+
+footer{
+  margin: 18rem 1rem 1rem 1rem;
+  padding: 1%;
+  background-color: lightgrey;
+  opacity: 65%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.footer{
+  padding: 1rem 1.5rem 4rem;
+}
+
+footer a{
+  color: green;
+}
+
+footer a:hover{
+  color: lightblue;
+  background-color: brown;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+
+
