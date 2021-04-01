@@ -39,6 +39,7 @@ nav {
 
 .card-success{
   width: 750px;
+  margin: auto;
 }
 
 .card-header {
@@ -75,6 +76,19 @@ nav {
 .edit-post-form{
   margin-left: 4rem;
   margin-right: 4rem;
+}
+
+#edit-label{
+  background-color: rgba(255,255,255,.5);
+  width: fit-content;
+  padding: 5px;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px
+}
+
+.delete-post-btn{
+  border-radius: 10px;
 }
 
 .new-post-form{

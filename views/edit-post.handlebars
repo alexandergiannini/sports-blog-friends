@@ -1,13 +1,13 @@
 <article>
   <a href="/dashboard" class="is-pulled-right" id="back-to-dashboard"> &larr; back to dashboard</a>
-  <h2 class="title mt-5">Edit Post</h2>
+  <h2 class="title mt-5" style="margin-left: 14rem">Edit Post</h2>
   <form class="edit-post-form">
     <div>
-        <label for="post-title" class="label is-medium">Post Title:</label>
+        <label for="post-title" class="label is-medium" id="edit-label">Post Title:</label>
       <input class="input" name="post-title" type="text" value="{{post.title}}" />
     </div>
     <div>
-        <label for="post-content" class="label is-medium">Post Content:</label>
+        <label for="post-content" class="label is-medium" id="edit-label">Post Content:</label>
       <input class="textarea" name="post-content" type="text" value="{{post.post_content}}" />
     </div>
     <div class="column">
