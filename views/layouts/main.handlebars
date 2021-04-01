@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The BasketBlog</title>
+  <title>The SportBlog</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
   <link rel="stylesheet" href="/stylesheets/style.css">
   <!--<link rel="stylesheet" href="/stylesheets/style.css"-->
@@ -13,11 +13,11 @@
 
   <div class="wrapper">
     <header>
-        <a href="/"><h1 class="heading mt-3 mb-3 is-size-4 has-text-centered">The BasketBlog</h1></a>
+        <a href="/"><h1 class="heading mt-3 mb-3 is-size-4 has-text-centered">The SportBlog</h1></a>
         <nav class="navbar">
             {{#if loggedIn}}
-            <a href="/" class="home-title navbar-item is-primary">Home</a>
-            <a href="/dashboard" class="home-title navbar-item is-primary">Dashboard</a>
+            <a href="/" class="home-title navbar-item has-text-centered">Home</a>
+            <a href="/dashboard" class="home-title navbar-item has-text-centered">Dashboard</a>
             <!--places logout on the same line at the end -->
               <div class="navbar-end">
                 <div class="navbar-item">
@@ -33,7 +33,7 @@
             <div class="navbar-end">
             <div class="navbar-item">
               <div class="btns has-text-right">
-              <a href="/login" class="button login-btn">Login</a>
+              <a href="/login" class="button login-btn is-primary">Login</a>
               </div>
             </div>
             </div>
@@ -47,9 +47,9 @@
     </main>
 
     <footer class="footer">
-      <div class=" content has-text-centered">
+      <div class=" content has-text-centered mt-5">
       <h4> Made by:</h4>
-      <div class="columns">
+      <div class="columns mt-2">
         <div class="column" ><a href="https://github.com/davitshirkhanyan" target="_blank"><i class="fab fa-github"></i> Davit Shirkhanyan </a></div>
         <div class="column" ><a href="https://github.com/alexandergiannini" target="_blank"><i class="fab fa-github"></i> Alexander Giannini</a></div>
         <div class="column" ><a href="https://github.com/mmcginley81" target="_blank"><i class="fab fa-github"></i> Matt McGinley</a></div>
