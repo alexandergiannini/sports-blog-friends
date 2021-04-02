@@ -57,9 +57,11 @@ nav {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
 .card-footer{
   background-color: rgba(192, 224, 240, .65);
 }
+
 .dash-post {
   font-size: 25px;
   color: rgb(66, 33, 33)
@@ -80,9 +82,11 @@ nav {
   margin-bottom: 10px;
   margin-top: 10px
 }
+
 .delete-post-btn{
   border-radius: 10px;
 }
+
 .new-post-form{
   margin-left: 4rem;
   margin-right: 4rem;
@@ -159,6 +163,9 @@ input{
   margin-top: 10px;
   outline: none;
 }
+
+
+
 .navbar {
   background-color: rgb(192, 224, 240);
   opacity: 65%;
@@ -191,3 +198,5 @@ footer a:hover {
   border-radius: 10px;
   padding: 5px;
 }
+
+
