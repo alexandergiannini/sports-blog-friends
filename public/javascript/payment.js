@@ -1,5 +1,6 @@
 // const { response } = require("express");
 
+// const { response } = require("express");
 var stripe = Stripe("pk_test_19lKLey0BnXSxv35hMNmN3sj00PuMqjbWm");
     var checkoutButton = document.getElementById("checkout-button");
     checkoutButton.addEventListener("click", function () {

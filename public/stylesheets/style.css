@@ -1,3 +1,9 @@
+:root{
+  --first-color: rgb(226, 191, 171);
+  --second-color: rgb(134, 202, 236);
+  --third-color: 
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -55,12 +61,17 @@ nav {
 
 .card {
     border-radius: 10px;
+    background-color: transparent;
 }
 
 .card-content {
   background-color: rgb(134, 202, 236);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+.card-footer{
+  background-color: rgba(192, 224, 240, .65);
 }
 
 .dash-post {
@@ -110,6 +121,19 @@ nav {
 .comment{
   margin-left: 4rem;
   margin-right: 4rem;
+  border-radius: 10px;
+  padding: 10px;
+  border-bottom: 5px solid white;
+}
+
+.comment:nth-child(odd){
+  background-color: var(--second-color);
+  color: black;
+}
+
+.comment:nth-child(even){
+  background-color: var(--first-color);
+  color: black;
 }
 
 .is-half.is-centered{
@@ -120,7 +144,7 @@ nav {
   font-size: 1.5rem;
 }
 
-.login-btn {
+.login-btn, .sign-btn, .btn-comment{
   border-radius: 10px;
   border: none;
   
@@ -159,12 +183,20 @@ textarea{
   min-width: 40%;
   min-height: 200px;
   padding: 10px;
+  border:  3px solid rgb(68, 114, 137);
+  border-radius: 10px;
+  outline: none;
 }
 
 input{
   border-radius: 10px;
   padding: 5px;
+  border: 3px solid  rgb(68, 114, 137);
+  margin-top: 10px;
+  outline: none;
 }
+
+
 
 .navbar {
   background-color: rgb(192, 224, 240);
@@ -174,6 +206,11 @@ input{
 .navbar-item {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.navbar a:hover{
+  background-color: rgb(92, 55, 55);
+  color: lightblue;
 }
 
 footer {
@@ -199,6 +236,5 @@ footer a:hover {
   border-radius: 10px;
   padding: 5px;
 }
-
 
 
