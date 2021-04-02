@@ -1,11 +1,23 @@
-body {
+:root{
+  --first-color: rgb(226, 191, 171);
+  --second-color: rgb(134, 202, 236);
+  --third-color: 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
   background-image: url("https://images.unsplash.com/photo-1586487943739-b6f6fbb142b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2125&q=80");
   background-position: center;
   background-size: cover;
-  margin: 1rem, 2rem, 2rem, 1rem;
-  min-height: 1000px;
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
 }
-
 
 a, .btns {
   margin: 15px;
@@ -19,7 +31,6 @@ h1 {
   color: primary;
 }
 
-
 .card {
   margin-left: 4rem;
   margin-right: 4rem;
@@ -28,15 +39,44 @@ h1 {
 nav {
   margin-left: 4rem;
   margin-right: 4rem;
-}
-
-.login-btn{
-  margin-bottom: 1.5rem;
+  margin-bottom: 4rem;
+  border-radius: 10px;
 }
 
 .card-success{
   width: 750px;
-  
+  margin: auto;
+}
+
+.card-header {
+  background-color: rgb(226, 191, 171);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid rgb(241, 223, 223);
+}
+
+.card-header a {
+  color: rgb(66, 33, 33);
+}
+
+.card {
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.card-content {
+  background-color: rgb(134, 202, 236);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card-footer{
+  background-color: rgba(192, 224, 240, .65);
+}
+
+.dash-post {
+  font-size: 25px;
+  color: rgb(66, 33, 33)
 }
 
 .success-items{
@@ -49,6 +89,19 @@ nav {
   margin-right: 4rem;
 }
 
+#edit-label{
+  background-color: rgba(255,255,255,.5);
+  width: fit-content;
+  padding: 5px;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px
+}
+
+.delete-post-btn{
+  border-radius: 10px;
+}
+
 .new-post-form{
   margin-left: 4rem;
   margin-right: 4rem;
@@ -57,6 +110,7 @@ nav {
 
 #back-to-dashboard{
   margin-right: 4rem;
+  background-color: rgba(255,255,255,.5);
 }
 
 .label{
@@ -67,6 +121,19 @@ nav {
 .comment{
   margin-left: 4rem;
   margin-right: 4rem;
+  border-radius: 10px;
+  padding: 10px;
+  border-bottom: 5px solid white;
+}
+
+.comment:nth-child(odd){
+  background-color: var(--second-color);
+  color: black;
+}
+
+.comment:nth-child(even){
+  background-color: var(--first-color);
+  color: black;
 }
 
 .is-half.is-centered{
@@ -77,45 +144,97 @@ nav {
   font-size: 1.5rem;
 }
 
+.login-btn, .sign-btn, .btn-comment{
+  border-radius: 10px;
+  border: none;
+  
+}
+
+.logout-btn {
+  background-color: #ff0000;
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
+
+.logout-btn:hover {
+  background-color: #f5603b;
+  color: white;
+}
+
+.create-btn,
+.donate-btn {
+  border-radius: 10px;
+}
+
+.home-title {
+  background-color: rgb(122, 78, 78);
+  color: lightblue;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.home-title:hover {
+  background-color: rgb(92, 55, 55);
+  color: lightblue;
+}
+
 textarea{
   min-width: 40%;
   min-height: 200px;
   padding: 10px;
+  border:  3px solid rgb(68, 114, 137);
+  border-radius: 10px;
+  outline: none;
 }
 
 input{
   border-radius: 10px;
   padding: 5px;
+  border: 3px solid  rgb(68, 114, 137);
+  margin-top: 10px;
+  outline: none;
 }
 
-.navbar{
-  background-color: lightgrey;
+
+
+.navbar {
+  background-color: rgb(192, 224, 240);
   opacity: 65%;
 }
 
-footer{
-  margin: 18rem 1rem 1rem 1rem;
-  padding: 1%;
-  background-color: lightgrey;
-  opacity: 65%;
+.navbar-item {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.navbar a:hover{
+  background-color: rgb(92, 55, 55);
+  color: lightblue;
+}
+
+footer {
+  margin: 350px 1rem;
+  background-color: rgb(192, 224, 240);
+  opacity: 70%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
-.footer{
-  padding: 1rem 1.5rem 4rem;
+.footer {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
-footer a{
-  color: green;
+footer a {
+  color:  rgb(68, 114, 137);
 }
 
-footer a:hover{
-  color: lightblue;
-  background-color: brown;
+footer a:hover {
+  color: rgb(68, 114, 137);
+  background-color: rgb(226, 191, 171);
   border-radius: 10px;
   padding: 5px;
 }
-
 
 

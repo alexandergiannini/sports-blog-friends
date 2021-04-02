@@ -1,8 +1,7 @@
-  
     <div class="mb-5 pt-3">
         <h2 class="title pb-4 has-text-centered">Dashboard</h2>
         
-        <a href="/dashboard/create/"><button id="create-post" class="button is-primary">Create New Post</button></a>
+        <a href="/dashboard/create/"><button id="create-post" class="button is-primary create-btn">Create New Post</button></a>
         
         
 {{#if posts.length}}
@@ -10,8 +9,9 @@
 
     {{#each posts as |post|}}
         {{> post-info post}}
-        
-            <a href="/dashboard/edit/{{post.id}}"><button class="button mb-5 ml-5 btn-comment">Edit Post</button></a>
+            <div class="card-footer">
+            <a href="/dashboard/edit/{{post.id}}"><button class="button mb-5 mt-5 btn-comment is-info">Edit Post</button></a> 
+            </div>
         </div>
     {{/each}}
 
