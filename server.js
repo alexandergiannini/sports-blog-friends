@@ -10,8 +10,6 @@ require('dotenv').config();
 const SECRET_KEY = "sk_test_51GEfgRJIoFEQrpd2DpleuMctJKKaQj0PWk39Zfa5g9GtjbPGBK7yhCvuTXkf2GFnBhGwDLbMRoS2xb7KyMhP76zw00C1tAbUCW"
 const stripe = require('stripe')(SECRET_KEY);
 
-// require bodyParser
-//var bodyParser = require('body-parser');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -32,15 +30,7 @@ const sess = {
   })
 };
 
-//stripe code
-// Create a new customer and then create an invoice item then invoice it:
 
-
-app.get('/premium-payment', function(req, res){ 
-    res.render('premium-payment', { 
-    key: 'pk_test_19lKLey0BnXSxv35hMNmN3sj00PuMqjbWm'
-    }) 
-  }) 
 
 //Add heroku domain when ready
 const YOUR_DOMAIN = 'localhost:3001';
