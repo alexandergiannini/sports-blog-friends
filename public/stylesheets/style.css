@@ -137,7 +137,9 @@ nav {
 }
 
 .is-half.is-centered{
-  margin-left: 20rem;
+  margin-left: 0;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .post-title{
@@ -237,4 +239,61 @@ footer a:hover {
   padding: 5px;
 }
 
+#created-by-user-on {
+  background-color:rgba(255,255,255,.5);
+  font-weight: bold;
+  padding: 10px;
+}
 
+#the-donate-btn-section {
+  margin: auto;
+}
+
+
+#create-post-btn {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  #created-by-user-on {
+    font-size: 13px;
+  }
+
+#homepage-posts-title {
+    font-size: 27px;
+  }
+
+  .logout-btn {
+    width: 100%;
+   
+  }
+
+  .is-half.is-centered{
+    margin-left: 0;
+    margin-top: 2.5rem;
+  }
+
+  #dashboard-btn {
+    margin-top: 8px;
+  }
+
+  #login-button {
+    margin-top: 8px;
+  }
+  /*.home-title {
+    margin-bottom: 100px;
+  }*/
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+}
+
+
+
+@media screen and (max-width: 575px) {
+
+}
