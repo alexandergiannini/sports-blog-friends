@@ -72,6 +72,12 @@ nav {
 
 .card-footer{
   background-color: rgba(192, 224, 240, .65);
+  width: 100%;
+
+}
+
+.card-footer div button a{
+  color: white;
 }
 
 .dash-post {
@@ -203,6 +209,7 @@ input{
 .navbar {
   background-color: rgb(192, 224, 240);
   opacity: 65%;
+  padding: 4px;
 }
 
 .navbar-item {
@@ -254,7 +261,7 @@ footer a:hover {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   #created-by-user-on {
     font-size: 13px;
   }
@@ -283,6 +290,14 @@ footer a:hover {
   /*.home-title {
     margin-bottom: 100px;
   }*/
+}
+
+.comments{
+  width: 100%;
+}
+
+.comment{
+  margin: auto;
 }
 
 
