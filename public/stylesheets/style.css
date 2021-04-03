@@ -121,6 +121,10 @@ nav {
   border-radius: 10px;
 }
 
+.back-to-dashboard {
+  margin-top: -4rem;
+}
+
 .label{
   font-weight: bold;
   font-size: 20px;
@@ -306,15 +310,13 @@ footer a:hover {
   border-radius: 10px;
 }
 
-/*#create-post-header {
-  text-align: center;
-  justify-content: center;
-  margin: auto;
-}*/
-
 @media screen and (max-width: 1023px) {
   #created-by-user-on {
     font-size: 13px;
+  }
+
+  .home-title {
+    margin-bottom: 3px;
   }
 
 #homepage-posts-title {
@@ -335,31 +337,33 @@ footer a:hover {
     margin-top: 8px;
   }
 
-  #login-button {
-    margin-top: 8px;
+  .delete-post-btn {
+    margin-bottom: 70px;
   }
   /*.home-title {
     margin-bottom: 100px;
   }*/
+
+  .back-to-dashboard {
+    margin-top: -6rem;
+    font-size: 13px;
+    margin-left: 8rem;
+   }
+
+   .edit-back-dash {
+    margin-top: -7rem;
+    font-size: 15px;
+  }
+
+  .comments {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .comment {
+    margin: auto;
+  }
 }
-
-.comments {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.comment {
-  margin: auto;
-}
-
-
-
-
-@media screen and (max-width: 768px) {
-
-}
-
-
 
 @media screen and (max-width: 575px) {
   #homepage-posts-title {
@@ -378,11 +382,6 @@ footer a:hover {
     margin-top: 10px;
   }
 
-  #back-to-dashboard {
-   margin-right: 10px;
-   font-size: 13px;
-  }
-
   #save-post-from-edit {
     margin-top: 10px;
   }
@@ -390,5 +389,14 @@ footer a:hover {
   .delete-post-btn{
     margin-top: 10px;
   }
- 
+
+  textarea,
+  .post-textarea, 
+  .post-input {
+    width: 100%;
+  }
+
+  .submit-btn {
+    margin-top: 10px;
+  }
 }
