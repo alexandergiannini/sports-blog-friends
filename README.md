@@ -56,7 +56,7 @@ Questions about this repository? Please contact any of the above contributers:
 - i@taeyjeong.com
 
 To view more work from each contributor:
-- @alexandergiannini
-- @mmcginley81
-- @davitshirkhanyan
-- @taeyjeong
+- [@alexandergiannini](https://github.com/alexandergiannini)
+- [@mmcginley81](https://github.com/mmcginley81)
+- [@davitshirkhanyan](https://github.com/davitshirkhanyan)
+- [@taeyjeong](https://github.com/taeyjeong)
