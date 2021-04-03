@@ -14,15 +14,15 @@
       
     </div>
    <div class="column">
-    <div class="is-pulled-right is-one-quarter" id="created-by-user-on">
+    <div class="is-pulled-right is-one-quarter comment-user" id="created-by-user-on">
        created by you on {{format_date post.created_at}}
       |
       <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
     </div>
    </div>
     <div class="is-half is-centered">
-    <button type="submit" class="button login-btn is-primary">Save Post</button>
-    <button type="button" class="button delete-post-btn is-primary">Delete Post</button>
+    <button type="submit" class="button submit-btn is-success">Save Post</button>
+    <button type="button" class="button delete-post-btn is-danger">Delete Post</button>
     </div>
   <!--  </div><!closes flexbox columns -->
   </form>

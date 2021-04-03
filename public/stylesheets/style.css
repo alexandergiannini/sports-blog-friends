@@ -3,11 +3,13 @@
   --second-color: rgb(134, 202, 236);
   --third-color: 
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body, html {
   background-image: url("https://images.unsplash.com/photo-1586487943739-b6f6fbb142b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2125&q=80");
   background-position: center;
@@ -16,42 +18,56 @@ body, html {
   font-family: Arial, Helvetica, sans-serif;
   height: 100%;
 }
+
 a, .btns {
   margin: 15px;
 }
+
 h1 {
   text-shadow: 2px 2px 2px #1C6EA4;
 }
+
 .meta {
   color: primary;
 }
+
 .card {
   margin-left: 4rem;
   margin-right: 4rem;
 }
+
 nav {
   margin-left: 4rem;
   margin-right: 4rem;
   margin-bottom: 4rem;
   border-radius: 10px;
 }
+
 .card-success{
   width: 750px;
   margin: auto;
 }
+
+/* .column {
+  padding: 0;
+} */
+
 .card-header {
   background-color: rgb(226, 191, 171);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom: 1px solid rgb(241, 223, 223);
 }
+
 .card-header a {
   color: rgb(66, 33, 33);
 }
+
 .card {
     border-radius: 10px;
     background-color: transparent;
 }
+
 .card-content {
   background-color: rgb(134, 202, 236);
   border-bottom-left-radius: 10px;
@@ -61,7 +77,7 @@ nav {
 .card-footer{
   background-color: rgba(192, 224, 240, .65);
   width: 100%;
-
+  border-radius: 10px;
 }
 
 .card-footer div button a{
@@ -72,16 +88,19 @@ nav {
   font-size: 25px;
   color: rgb(66, 33, 33)
 }
+
 .success-items{
   align-items: center;
   justify-self: center;
 }
+
 .edit-post-form{
   margin-left: 4rem;
   margin-right: 4rem;
 }
+
 #edit-label{
-  background-color: rgba(255,255,255,.5);
+  font-size: 25px;
   width: fit-content;
   padding: 5px;
   margin: auto;
@@ -97,66 +116,84 @@ nav {
   margin-left: 4rem;
   margin-right: 4rem;
 }
+
 #back-to-dashboard{
   margin-right: 4rem;
-  background-color: rgba(255,255,255,.5);
+  
 }
+
 .label{
   font-weight: bold;
-  background-color: white;
+  font-size: 20px;
 }
-.comment{
+
+.comment {
   margin-left: 4rem;
   margin-right: 4rem;
   border-radius: 10px;
   padding: 10px;
-  border-bottom: 5px solid white;
 }
-.comment:nth-child(odd){
+
+.comment:nth-child(odd) {
   background-color: var(--second-color);
   color: black;
+  margin-bottom: 5px;
 }
-.comment:nth-child(even){
+
+.comment:nth-child(even) {
   background-color: var(--first-color);
   color: black;
+  margin-bottom: 5px;
 }
-.is-half.is-centered{
+
+.is-half.is-centered {
   margin-left: 0;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
 }
-.post-title{
+
+.post-title {
   font-size: 1.5rem;
 }
-.login-btn, .sign-btn, .btn-comment{
+
+.login-btn,
+.sign-btn, 
+.btn-comment {
   border-radius: 10px;
   border: none;
 }
+
 .logout-btn {
   background-color: #FF0000;
     border-radius: 10px;
     color: white;
     border: none;
 }
+
 .logout-btn:hover {
   background-color: #F5603B;
   color: white;
 }
+
 .create-btn,
-.donate-btn {
+.donate-btn,
+.submit-btn {
   border-radius: 10px;
 }
+
 .home-title {
   background-color: rgb(122, 78, 78);
   color: lightblue;
   border-radius: 10px;
   padding: 5px;
 }
+
 .home-title:hover {
   background-color: rgb(92, 55, 55);
   color: lightblue;
 }
-textarea{
+
+textarea {
   min-width: 40%;
   min-height: 200px;
   padding: 10px;
@@ -164,7 +201,8 @@ textarea{
   border-radius: 10px;
   outline: none;
 }
-input{
+ 
+input {
   border-radius: 10px;
   padding: 5px;
   border: 3px solid  rgb(68, 114, 137);
@@ -172,21 +210,22 @@ input{
   outline: none;
 }
 
-
-
 .navbar {
   background-color: rgb(192, 224, 240);
   opacity: 65%;
   padding: 4px;
 }
+
 .navbar-item {
   margin-top: auto;
   margin-bottom: auto;
 }
-.navbar a:hover{
+
+.navbar a:hover {
   background-color: rgb(92, 55, 55);
   color: lightblue;
 }
+
 footer {
   margin: 350px 1rem;
   background-color: rgb(192, 224, 240);
@@ -194,13 +233,16 @@ footer {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+
 .footer {
   padding-top: 1rem;
   padding-bottom: 2rem;
 }
+
 footer a {
   color:  rgb(68, 114, 137);
 }
+
 footer a:hover {
   color: rgb(68, 114, 137);
   background-color: rgb(226, 191, 171);
@@ -209,15 +251,21 @@ footer a:hover {
 }
 
 #created-by-user-on {
-  background-color:rgba(255,255,255,.5);
+  color: black;
   font-weight: bold;
-  padding: 10px;
+  opacity: 65%;
+  background-color: rgb(192, 224, 240);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.column a {
+  color: rgb(11, 78, 122);
 }
 
 #the-donate-btn-section {
   margin: auto;
 }
-
 
 #create-post-btn {
   margin-top: 10px;
@@ -237,7 +285,7 @@ footer a:hover {
    
   }
 
-  .is-half.is-centered{
+  .is-half.is-centered {
     margin-left: 0;
     margin-top: 2.5rem;
   }
@@ -254,11 +302,12 @@ footer a:hover {
   }*/
 }
 
-.comments{
-  width: 100%;
+.comments {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.comment{
+.comment {
   margin: auto;
 }
 
