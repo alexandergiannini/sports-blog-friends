@@ -254,12 +254,29 @@ footer a:hover {
 
 #the-donate-btn-section {
   margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 
 #create-post-btn {
   margin-top: 10px;
 }
+
+#we-appreciate-your-donation-text {
+  color: white;
+}
+
+#basketblog-email {
+  color: white;
+  text-decoration: underline;
+}
+
+/*#create-post-header {
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}*/
 
 @media screen and (max-width: 1023px) {
   #created-by-user-on {
@@ -310,5 +327,33 @@ footer a:hover {
 
 
 @media screen and (max-width: 575px) {
+  #homepage-posts-title {
+    font-size: 20px;
+  }
 
+  .user-content {
+    font-size: 11.5px;
+  }
+
+  #no-posts-text {
+    font-size: 20px;
+  }
+
+  #edit-label {
+    margin-top: 10px;
+  }
+
+  #back-to-dashboard {
+   margin-right: 10px;
+   font-size: 13px;
+  }
+
+  #save-post-from-edit {
+    margin-top: 10px;
+  }
+
+  .delete-post-btn{
+    margin-top: 10px;
+  }
+ 
 }
