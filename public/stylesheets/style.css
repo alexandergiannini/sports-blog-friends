@@ -48,9 +48,9 @@ nav {
   margin: auto;
 }
 
-/* .column {
-  padding: 0;
-} */
+.user-content {
+  margin-top: -10px;
+}
 
 .card-header {
   background-color: rgb(226, 191, 171);
@@ -63,24 +63,22 @@ nav {
   color: rgb(66, 33, 33);
 }
 
-.card {
-    border-radius: 10px;
-    background-color: transparent;
-}
-
 .card-content {
   background-color: rgb(134, 202, 236);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
-.card-footer{
-  background-color: rgba(192, 224, 240, .65);
-  width: 100%;
-  border-radius: 10px;
+.card {
+  background-color: transparent;
+  box-shadow: none;
 }
 
-.card-footer div button a{
+.card-footer {
+  border: none;
+}
+
+.card-footer div button a {
   color: white;
 }
 
@@ -99,7 +97,7 @@ nav {
   margin-right: 4rem;
 }
 
-#edit-label{
+#edit-label {
   font-size: 25px;
   width: fit-content;
   padding: 5px;
@@ -117,9 +115,10 @@ nav {
   margin-right: 4rem;
 }
 
-#back-to-dashboard{
+#back-to-dashboard {
   margin-right: 4rem;
-  
+  margin-bottom: -10px;
+  border-radius: 10px;
 }
 
 .label{
@@ -188,12 +187,17 @@ nav {
   padding: 5px;
 }
 
+.title a {
+  background-color: red;
+}
+
 .home-title:hover {
   background-color: rgb(92, 55, 55);
   color: lightblue;
 }
 
-textarea {
+textarea,
+.post-textarea {
   min-width: 40%;
   min-height: 200px;
   padding: 10px;
@@ -208,6 +212,15 @@ input {
   border: 3px solid  rgb(68, 114, 137);
   margin-top: 10px;
   outline: none;
+}
+
+.post-input {
+  width: 60%;
+  border: 3px solid  rgb(68, 114, 137);
+  border-radius: 10px;
+  outline: none;
+  box-shadow: none;
+  padding: 10px;
 }
 
 .navbar {
@@ -274,12 +287,23 @@ footer a:hover {
 }
 
 #we-appreciate-your-donation-text {
-  color: white;
+  color: black;
 }
 
 #basketblog-email {
-  color: white;
+  background-color: rgb(199, 166, 128);
   text-decoration: underline;
+  padding: 5px;
+  border-radius: 10px;
+  color: #0a0942;
+}
+
+#basketblog-email:hover {
+  background-color: rgb(165, 117, 62);
+}
+
+.success-img {
+  border-radius: 10px;
 }
 
 /*#create-post-header {
