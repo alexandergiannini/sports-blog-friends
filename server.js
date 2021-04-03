@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path'); ///
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
@@ -7,7 +7,7 @@ const helpers = require('./utils/helpers');
 //stripe payment info
 require('dotenv').config();
 //put SECRET_KEY and PUBLISHABLE_KEY into ENV File once working
-const SECRET_KEY = process.env.SECRET_KEY;
+const SECRET_KEY = 'sk_test_51GEfgRJIoFEQrpd2DpleuMctJKKaQj0PWk39Zfa5g9GtjbPGBK7yhCvuTXkf2GFnBhGwDLbMRoS2xb7KyMhP76zw00C1tAbUCW';
 const stripe = require('stripe')(SECRET_KEY);
 // require bodyParser
 //var bodyParser = require('body-parser');
