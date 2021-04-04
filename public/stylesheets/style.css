@@ -1,7 +1,13 @@
-:root{
+:root {
   --first-color: rgb(226, 191, 171);
   --second-color: rgb(134, 202, 236);
-  --third-color: 
+  --third-color: rgb(66, 33, 33);
+  --fourth-color: rgb(68, 114, 137);
+  --fifth-color: rgb(192, 224, 240);
+  --sixth-color: rgb(255, 255, 255);
+  --seventh-color: rgb(173, 216, 230);
+  --eigth-color: rgb(0, 0, 0);
+  --ninth-color: rgb(92, 55, 55);
 }
 
 * {
@@ -10,7 +16,8 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   background-image: url("https://images.unsplash.com/photo-1586487943739-b6f6fbb142b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2125&q=80");
   background-position: center;
   background-size: cover;
@@ -53,18 +60,18 @@ nav {
 }
 
 .card-header {
-  background-color: rgb(226, 191, 171);
+  background-color: var(--first-color);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom: 1px solid rgb(241, 223, 223);
 }
 
 .card-header a {
-  color: rgb(66, 33, 33);
+  color: var(--third-color);
 }
 
 .card-content {
-  background-color: rgb(134, 202, 236);
+  background-color: var(--second-color);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -79,12 +86,12 @@ nav {
 }
 
 .card-footer div button a {
-  color: white;
+  color: var(--sixth-color);
 }
 
 .dash-post {
   font-size: 25px;
-  color: rgb(66, 33, 33)
+  color: var(--third-color);
 }
 
 .success-items{
@@ -92,7 +99,8 @@ nav {
   justify-self: center;
 }
 
-.edit-post-form{
+.edit-post-form,
+.new-post-form {
   margin-left: 4rem;
   margin-right: 4rem;
 }
@@ -110,11 +118,6 @@ nav {
   border-radius: 10px;
 }
 
-.new-post-form{
-  margin-left: 4rem;
-  margin-right: 4rem;
-}
-
 #back-to-dashboard {
   margin-right: 4rem;
   margin-bottom: -10px;
@@ -125,7 +128,7 @@ nav {
   margin-top: -4rem;
 }
 
-.label{
+.label {
   font-weight: bold;
   font-size: 20px;
 }
@@ -139,13 +142,13 @@ nav {
 
 .comment:nth-child(odd) {
   background-color: var(--second-color);
-  color: black;
+  color: var(--eigth-color);
   margin-bottom: 5px;
 }
 
 .comment:nth-child(even) {
-  background-color: var(--first-color);
-  color: black;
+  background-color: var(--first-color);;
+  color: var(--eigth-color);
   margin-bottom: 5px;
 }
 
@@ -168,14 +171,14 @@ nav {
 
 .logout-btn {
   background-color: #FF0000;
-    border-radius: 10px;
-    color: white;
-    border: none;
+  border-radius: 10px;
+  color: var(--sixth-color);
+  border: none;
 }
 
 .logout-btn:hover {
   background-color: #F5603B;
-  color: white;
+  color: var(--sixth-color);
 }
 
 .create-btn,
@@ -186,18 +189,14 @@ nav {
 
 .home-title {
   background-color: rgb(122, 78, 78);
-  color: lightblue;
+  color: var(--seventh-color);
   border-radius: 10px;
   padding: 5px;
 }
 
-.title a {
-  background-color: red;
-}
-
 .home-title:hover {
-  background-color: rgb(92, 55, 55);
-  color: lightblue;
+  background-color: var(--ninth-color);
+  color: var(--seventh-color);
 }
 
 textarea,
@@ -205,7 +204,7 @@ textarea,
   min-width: 40%;
   min-height: 200px;
   padding: 10px;
-  border:  3px solid rgb(68, 114, 137);
+  border:  3px solid var(--fourth-color);
   border-radius: 10px;
   outline: none;
 }
@@ -213,14 +212,14 @@ textarea,
 input {
   border-radius: 10px;
   padding: 5px;
-  border: 3px solid  rgb(68, 114, 137);
+  border: 3px solid var(--fourth-color);
   margin-top: 10px;
   outline: none;
 }
 
 .post-input {
   width: 60%;
-  border: 3px solid  rgb(68, 114, 137);
+  border: 3px solid var(--fourth-color);
   border-radius: 10px;
   outline: none;
   box-shadow: none;
@@ -228,7 +227,7 @@ input {
 }
 
 .navbar {
-  background-color: rgb(192, 224, 240);
+  background-color: var(--fifth-color);
   opacity: 65%;
   padding: 4px;
 }
@@ -239,13 +238,13 @@ input {
 }
 
 .navbar a:hover {
-  background-color: rgb(92, 55, 55);
-  color: lightblue;
+  background-color: var(--ninth-color);
+  color: var(--seventh-color);
 }
 
 footer {
   margin: 350px 1rem;
-  background-color: rgb(192, 224, 240);
+  background-color: var(--fifth-color);
   opacity: 70%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -257,21 +256,21 @@ footer {
 }
 
 footer a {
-  color:  rgb(68, 114, 137);
+  color:  var(--fourth-color);
 }
 
 footer a:hover {
-  color: rgb(68, 114, 137);
-  background-color: rgb(226, 191, 171);
+  color: var(--fourth-color);
+  background-color: var(--first-color);
   border-radius: 10px;
   padding: 5px;
 }
 
 #created-by-user-on {
-  color: black;
+  color: var(--eigth-color);
   font-weight: bold;
   opacity: 65%;
-  background-color: rgb(192, 224, 240);
+  background-color: var(--fifth-color);
   border-radius: 10px;
   padding: 5px;
 }
@@ -293,7 +292,7 @@ footer a:hover {
 #we-appreciate-your-donation-text {
   color: #363636;
   font-weight: bold;
-  background-color: rgb(134, 202, 236);
+  background-color: var(--second-color);
   margin-top: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -345,9 +344,6 @@ footer a:hover {
   .delete-post-btn {
     margin-bottom: 70px;
   }
-  /*.home-title {
-    margin-bottom: 100px;
-  }*/
 
   .back-to-dashboard {
     margin-top: -6rem;
