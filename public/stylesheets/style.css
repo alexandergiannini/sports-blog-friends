@@ -48,6 +48,10 @@ nav {
   margin: auto;
 }
 
+.user-content {
+  margin-top: -10px;
+}
+
 .card-header {
   background-color: rgb(226, 191, 171);
   border-top-left-radius: 10px;
@@ -59,19 +63,23 @@ nav {
   color: rgb(66, 33, 33);
 }
 
-.card {
-    border-radius: 10px;
-    background-color: transparent;
-}
-
 .card-content {
   background-color: rgb(134, 202, 236);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
-.card-footer{
-  background-color: rgba(192, 224, 240, .65);
+.card {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.card-footer {
+  border: none;
+}
+
+.card-footer div button a {
+  color: white;
 }
 
 .dash-post {
@@ -89,8 +97,8 @@ nav {
   margin-right: 4rem;
 }
 
-#edit-label{
-  background-color: rgba(255,255,255,.5);
+#edit-label {
+  font-size: 25px;
   width: fit-content;
   padding: 5px;
   margin: auto;
@@ -107,63 +115,72 @@ nav {
   margin-right: 4rem;
 }
 
-
-#back-to-dashboard{
+#back-to-dashboard {
   margin-right: 4rem;
-  background-color: rgba(255,255,255,.5);
+  margin-bottom: -10px;
+  border-radius: 10px;
+}
+
+.back-to-dashboard {
+  margin-top: -4rem;
 }
 
 .label{
   font-weight: bold;
-  background-color: white;
+  font-size: 20px;
 }
 
-.comment{
+.comment {
   margin-left: 4rem;
   margin-right: 4rem;
   border-radius: 10px;
   padding: 10px;
-  border-bottom: 5px solid white;
 }
 
-.comment:nth-child(odd){
+.comment:nth-child(odd) {
   background-color: var(--second-color);
   color: black;
+  margin-bottom: 5px;
 }
 
-.comment:nth-child(even){
+.comment:nth-child(even) {
   background-color: var(--first-color);
   color: black;
+  margin-bottom: 5px;
 }
 
-.is-half.is-centered{
-  margin-left: 20rem;
+.is-half.is-centered {
+  margin-left: 0;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-.post-title{
+.post-title {
   font-size: 1.5rem;
 }
 
-.login-btn, .sign-btn, .btn-comment{
+.login-btn,
+.sign-btn, 
+.btn-comment {
   border-radius: 10px;
   border: none;
-  
 }
 
 .logout-btn {
-  background-color: #ff0000;
+  background-color: #FF0000;
     border-radius: 10px;
     color: white;
     border: none;
 }
 
 .logout-btn:hover {
-  background-color: #f5603b;
+  background-color: #F5603B;
   color: white;
 }
 
 .create-btn,
-.donate-btn {
+.donate-btn,
+.submit-btn {
   border-radius: 10px;
 }
 
@@ -174,12 +191,17 @@ nav {
   padding: 5px;
 }
 
+.title a {
+  background-color: red;
+}
+
 .home-title:hover {
   background-color: rgb(92, 55, 55);
   color: lightblue;
 }
 
-textarea{
+textarea,
+.post-textarea {
   min-width: 40%;
   min-height: 200px;
   padding: 10px;
@@ -187,8 +209,8 @@ textarea{
   border-radius: 10px;
   outline: none;
 }
-
-input{
+ 
+input {
   border-radius: 10px;
   padding: 5px;
   border: 3px solid  rgb(68, 114, 137);
@@ -196,11 +218,19 @@ input{
   outline: none;
 }
 
-
+.post-input {
+  width: 60%;
+  border: 3px solid  rgb(68, 114, 137);
+  border-radius: 10px;
+  outline: none;
+  box-shadow: none;
+  padding: 10px;
+}
 
 .navbar {
   background-color: rgb(192, 224, 240);
   opacity: 65%;
+  padding: 4px;
 }
 
 .navbar-item {
@@ -208,7 +238,7 @@ input{
   margin-bottom: auto;
 }
 
-.navbar a:hover{
+.navbar a:hover {
   background-color: rgb(92, 55, 55);
   color: lightblue;
 }
@@ -237,4 +267,141 @@ footer a:hover {
   padding: 5px;
 }
 
+#created-by-user-on {
+  color: black;
+  font-weight: bold;
+  opacity: 65%;
+  background-color: rgb(192, 224, 240);
+  border-radius: 10px;
+  padding: 5px;
+}
 
+.column a {
+  color: rgb(11, 78, 122);
+}
+
+#the-donate-btn-section {
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#create-post-btn {
+  margin-top: 10px;
+}
+
+#we-appreciate-your-donation-text {
+  color: #363636;
+  font-weight: bold;
+  background-color: rgb(134, 202, 236);
+  margin-top: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#basketblog-email {
+  background-color: rgb(199, 166, 128);
+  text-decoration: underline;
+  padding: 5px;
+  border-radius: 10px;
+  color: #0a0942;
+}
+
+#basketblog-email:hover {
+  background-color: rgb(165, 117, 62);
+}
+
+.success-img {
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1023px) {
+  #created-by-user-on {
+    font-size: 13px;
+  }
+
+  .home-title {
+    margin-bottom: 3px;
+  }
+
+#homepage-posts-title {
+    font-size: 27px;
+  }
+
+  .logout-btn {
+    width: 100%;
+   
+  }
+
+  .is-half.is-centered {
+    margin-left: 0;
+    margin-top: 2.5rem;
+  }
+
+  #dashboard-btn {
+    margin-top: 8px;
+  }
+
+  .delete-post-btn {
+    margin-bottom: 70px;
+  }
+  /*.home-title {
+    margin-bottom: 100px;
+  }*/
+
+  .back-to-dashboard {
+    margin-top: -6rem;
+    font-size: 13px;
+    margin-left: 8rem;
+   }
+
+   .edit-back-dash {
+    margin-top: -7rem;
+    font-size: 15px;
+  }
+
+  .comments {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .comment {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #homepage-posts-title {
+    font-size: 20px;
+  }
+
+  .user-content {
+    font-size: 11.5px;
+  }
+
+  #no-posts-text {
+    font-size: 20px;
+  }
+
+  #edit-label {
+    margin-top: 10px;
+  }
+
+  #save-post-from-edit {
+    margin-top: 10px;
+  }
+
+  .delete-post-btn{
+    margin-top: 10px;
+  }
+
+  textarea,
+  .post-textarea, 
+  .post-input {
+    width: 100%;
+  }
+
+  .submit-btn {
+    margin-top: 10px;
+  }
+}
