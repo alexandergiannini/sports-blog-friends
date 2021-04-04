@@ -37,6 +37,7 @@ Basketblog is a web application to help basketfall fanatics blog about this favo
 
 # Usage
 - Run the following command: npm start
+- For stripe functionality, please use a test card card. Example: 4242 4242 4242 4242
 
 # Website
 - https://guarded-ravine-67476.herokuapp.com/
