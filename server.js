@@ -55,7 +55,7 @@ app.post('/create-checkout-session', async (req, res) => {
     mode: 'payment',
     // Add Heroku Domain Page when ready
     success_url: `${YOUR_DOMAIN}/dashboard/success`,
-    cancel_url: `${YOUR_DOMAIN}/cancel`,
+    cancel_url: `${YOUR_DOMAIN}/`,
   });
   res.json({ id: session.id });
 });
